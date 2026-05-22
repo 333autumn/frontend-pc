@@ -1,0 +1,91 @@
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1677ff 0%, #0050b3 100%);
+
+  .login-card {
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+
+    .el-card__body {
+      padding: 40px;
+    }
+  }
+
+  .login-brand {
+    text-align: center;
+    margin-bottom: 32px;
+
+    .brand-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1677ff, #4096ff);
+      margin-bottom: 16px;
+
+      i {
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+
+    .brand-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #303133;
+      letter-spacing: 2px;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #909399;
+      margin-top: 6px;
+    }
+  }
+
+  .login-form {
+    .el-form-item {
+      margin-bottom: 22px;
+    }
+
+    .el-input__prefix {
+      color: #c0c4cc;
+    }
+
+    .sms-row {
+      display: flex;
+      gap: 10px;
+
+      .el-input {
+        flex: 1;
+      }
+
+      .sms-btn {
+        min-width: 110px;
+      }
+    }
+  }
+
+  .login-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+
+    a {
+      color: #1677ff;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        color: #4096ff;
+      }
+    }
+  }
+}

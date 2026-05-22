@@ -1,0 +1,108 @@
+// Table
+.el-table {
+  font-size: $font-size-base;
+
+  th.el-table__cell {
+    background: #fafafa;
+    color: $text-primary;
+    font-weight: 600;
+    height: 48px;
+  }
+
+  td.el-table__cell {
+    height: 48px;
+  }
+}
+
+// Tag
+.el-tag {
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+// Pagination
+.el-pagination {
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+// Dialog
+.el-dialog {
+  border-radius: 8px;
+  max-width: 800px;
+
+  .el-dialog__header {
+    border-bottom: 1px solid $border-color;
+    padding: 16px 20px;
+    margin-right: 0;
+  }
+
+  .el-dialog__body {
+    padding: 20px;
+  }
+
+  .el-dialog__footer {
+    border-top: 1px solid $border-color;
+    padding: 12px 20px;
+  }
+}
+
+// Tabs
+.el-tabs {
+  .el-tabs__header {
+    margin-bottom: 16px;
+  }
+}
+
+// Card
+.el-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+// Breadcrumb
+.el-breadcrumb {
+  line-height: $header-height;
+}
+
+// Button
+.el-button--primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover, &:focus {
+    background-color: #4096ff;
+    border-color: #4096ff;
+  }
+}
+
+// Form
+.el-form-item__label {
+  color: $text-regular;
+  font-weight: 500;
+}
+
+// Menu
+.el-menu--popup {
+  .el-menu-item {
+    color: $sidebar-text;
+    background: $sidebar-bg;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    &.is-active {
+      background: $sidebar-active-bg;
+      color: #fff;
+    }
+  }
+}
+
+// Stat card
+.stat-card {
+  .el-card__body {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "fire-equipment-management",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api:doc": "node scripts/generate-api-doc.js",
+    "api:check": "node scripts/generate-api-doc.js --check"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.11",
+    "echarts": "^5.5.1",
+    "element-ui": "^2.15.14",
+    "mockjs": "^1.1.0",
+    "vue": "^2.7.16",
+    "vue-echarts": "^6.6.9",
+    "vue-router": "^3.6.5",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "vite": "^4.5.3",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "sass": "^1.77.4"
+  }
+}

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-primary;
+  background: $bg-page;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c4cc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// Page content wrapper
+.page-container {
+  padding: $padding-page;
+  background: $bg-white;
+  border-radius: 4px;
+  min-height: calc(100vh - #{$header-height} - #{$padding-page} * 2);
+}
+
+// Stat cards row
+.stat-card-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+// Chart grid
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.chart-panel {
+  background: $bg-white;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 16px;
+  min-height: 350px;
+
+  .chart-title {
+    font-size: $font-size-title;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $border-color-light;
+  }
+
+  .chart-body {
+    height: 300px;
+  }
+}
+
+// Search bar
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: $bg-page;
+  border-radius: 4px;
+
+  .el-form-item {
+    margin-bottom: 0;
+  }
+}
+
+// Toolbar buttons
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+// Fade transition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
