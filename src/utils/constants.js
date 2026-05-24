@@ -23,18 +23,20 @@ export const INSPECTION_RESULT = {
   FAIL: { label: '不合格', color: 'danger' }
 }
 
-// Hazard
+// Hazard levels: 1=一般, 2=严重, 3=紧急
 export const HAZARD_LEVEL = {
-  CRITICAL: { label: '严重', color: 'danger' },
-  MODERATE: { label: '一般', color: 'warning' },
-  MINOR: { label: '轻微', color: 'info' }
+  1: { label: '一般', color: 'info' },
+  2: { label: '严重', color: 'warning' },
+  3: { label: '紧急', color: 'danger' }
 }
 
+// Hazard status: 1=待审核, 2=已派单, 3=处置中, 4=待复核, 5=已归档
 export const HAZARD_STATUS = {
-  PENDING_REVIEW: { label: '待审核', color: 'warning' },
-  PROCESSING: { label: '处置中', color: 'primary' },
-  PENDING_ASSIGN: { label: '待派单', color: 'info' },
-  ARCHIVED: { label: '已归档', color: 'success' }
+  1: { label: '待审核', color: 'warning' },
+  2: { label: '已派单', color: 'primary' },
+  3: { label: '处置中', color: 'info' },
+  4: { label: '待复核', color: 'warning' },
+  5: { label: '已归档', color: 'success' }
 }
 
 // Maintenance
