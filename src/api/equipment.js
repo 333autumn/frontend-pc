@@ -1,7 +1,7 @@
 import request from './request'
 
 export function getEquipmentList(params) {
-  return request.get('/equipmentInfo/info/page', { params })
+  return request.get('/fire/equipmentinfo/pagelist', { params })
 }
 export function getEquipment(id) {
   return request.get('/equipmentInfo/info/' + id)

@@ -64,7 +64,7 @@ const data = Mock.mock({
   }]
 }).list
 
-Mock.mock(/\/api\/v1\/equipmentInfo\/info\/page(\?|$)/, 'get', (options) => {
+Mock.mock(/\/api\/v1\/fire\/equipmentinfo\/pagelist/, 'get', (options) => {
   let list = [...data]
   const url = new URL('http://localhost' + options.url)
   const page = parseInt(url.searchParams.get('page')) || 1
